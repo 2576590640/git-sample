@@ -2,6 +2,7 @@ name: Build and Push to Docker Hub
 
 on:
   push:
+    workflow_dispatch: 
     branches: [ main ]
     tags: [ 'v*' ]      # 打 tag 时也触发
 
