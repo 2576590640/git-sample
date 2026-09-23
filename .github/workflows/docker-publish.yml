@@ -32,7 +32,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/wzy/my-docker-app
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/my-docker-app
           tags: |
             type=ref,event=branch
             type=semver,pattern={{version}}
